@@ -1,0 +1,130 @@
+<!-- Define an HTML Table
+A table in HTML consists of table cells inside rows and columns. -->
+<!-- Everything between <td> and </td> is the content of a table cell. -->
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+
+<!-- Table Headers
+Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag: -->
+
+<!-- How To Add a Border
+To add a border, use the CSS border property on table, th, and td elements: -->
+table, th, td {
+  border: 1px solid black;
+}
+<!-- Collapsed Table Borders
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse. -->
+<!-- Style Table Borders
+If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border: -->
+<!-- Round Table Borders
+With the border-radius property, the borders get rounded corners: -->
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+<!-- Dotted Table Borders
+With the border-style property, you can set the appearance of the border. -->
+ th, td {
+  border-style: dotted;
+}
+<!-- Border Color
+With the border-color property, you can set the color of the border. -->
+ th, td {
+  border-color: #96D4D4;
+}
+<!-- HTML Table Width
+To set the width of a table, add the style attribute to the <table> element: -->
+<!-- HTML Table Column Width
+To set the size of a specific column, add the style attribute on a <th> or <td> element: -->
+<!-- HTML Table Row Height 
+To set the height of a specific row, add the style attribute on a table row element:-->
+
+<!-- HTML Table Headers
+Table headers are defined with th elements. Each th element represents a table cell. -->
+
+<!-- Vertical Table Headers
+To use the first column as table headers, define the first cell in each row as a <th> element: -->
+
+<!-- Align Table Headers
+By default, table headers are bold and centered: -->
+
+<!-- Header for Multiple Columns
+You can have a header that spans over two or more columns. -->
+
+<!-- HTML Table - Cell Padding
+Cell padding is the space between the cell edges and the cell content. -->
+th, td {
+  padding: 15px;
+}
+
+<!-- Add padding to the other sides with the padding-bottom, padding-left, and padding-right properties:
+
+Example
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+} -->
+
+<!-- HTML Table - Cell Spacing
+Cell spacing is the space between each cell.
+
+By default the space is set to 2 pixels.
+
+To change the space between table cells, use the CSS border-spacing property on the table element:
+
+Example
+table {
+  border-spacing: 30px;
+} -->
+
+<!-- HTML Table - Colspan
+To make a cell span over multiple columns, use the colspan attribute: -->
+
+<!-- HTML Table - Rowspan
+To make a cell span over multiple rows, use the rowspan attribute: -->
+
+<!-- HTML Table - Zebra Stripes
+If you add a background color on every other table row, you will get a nice zebra stripes effect. -->
+
+<!-- HTML Table - Vertical Zebra Stripes
+To make vertical zebra stripes, style every other column, instead of every other row. -->
+
+<!-- Combine Vertical and Horizontal Zebra Stripes
+You can combine the styling from the two examples above and you will have stripes on every other row and every other column. -->
+
+<!-- If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers. -->
+
+<!-- Use the :hover selector on tr to highlight table rows on mouse over: -->
+
+<!-- HTML Table Colgroup
+If you want to style the first two columns of a table, use the <colgroup> and <col> elements. -->
+
+<!-- Legal CSS Properties
+There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:
+
+width property
+visibility property
+background properties
+border properties -->
+
+<!-- Multiple Col Elements
+If you want to style multiple columns with different styles, use more than one <col> element inside the <colgroup>: -->
+
+<!-- Empty Colgroups
+If you want to style columns in the middle of a table, insert an "empty" <col> element (with no styles) for the columns before: -->
+
+<!-- Hide Columns
+You can hide columns with the visibility: collapse property: -->
+
+
+
+
+
+

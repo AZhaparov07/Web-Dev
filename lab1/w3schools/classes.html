@@ -1,0 +1,47 @@
+<!-- The class Attribute
+The class attribute is often used to point to a class name in a style sheet. It can also be used by JavaScript to access and manipulate elements with the specific class name. -->
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<!-- The Syntax For Class
+To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}: -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Multiple Classes
+HTML elements can belong to more than one class. -->
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+<!-- Different Elements Can Share Same Class
+Different HTML elements can point to the same class name. -->
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+<!-- Use of the class Attribute in JavaScript
+The class name can also be used by JavaScript to perform certain tasks for specific elements. -->
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+
+

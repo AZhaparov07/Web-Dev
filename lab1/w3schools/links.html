@@ -1,0 +1,79 @@
+<!-- HTML Links - Hyperlinks
+HTML links are hyperlinks. -->
+
+<!-- HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. It has the following syntax: -->
+<a href="url">link text</a>
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+<!-- By default, links will appear as follows in all browsers:
+    An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red -->
+
+<!-- HTML Links - The target Attribute
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window -->
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+<!-- Absolute URLs vs. Relative URLs
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+A local link (a link to a page within the same website) 
+is specified with a relative URL (without the "https://www" part): -->
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<!-- HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag: -->
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<!-- Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+<a href="mailto:someone@example.com">Send email</a>
+
+<!-- Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code. -->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<!-- Link Titles
+The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+<!-- Link Buttons
+A link can also be styled as a button, by using CSS: -->
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+<!-- Create a Bookmark in HTML
+Bookmarks can be useful if a web page is very long.
+
+To create a bookmark - first create the bookmark, then add a link to it.
+
+When the link is clicked, the page will scroll down or up to the location with the bookmark. -->
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>

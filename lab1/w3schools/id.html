@@ -1,0 +1,33 @@
+<!-- The id Attribute
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. -->
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+<!-- Difference Between Class and ID
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page: -->
+
+<!-- HTML Bookmarks with ID and Links
+HTML bookmarks are used to allow readers to jump to specific parts of a webpage. -->
+<h2 id="C4">Chapter 4</h2>
+
+<!-- Using the id Attribute in JavaScript
+The id attribute can also be used by JavaScript to perform some tasks for that specific element. -->
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+
+
+
+
