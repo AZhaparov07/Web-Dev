@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #57606a;
+}
+
+.mainlink {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #24292f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.pricing {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 70px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    flex: 1;
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 0 0 6px;
+}
+
+.desc {
+    margin: 0 0 16px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.price {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 0 16px;
+}
+
+.price span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #6b7280;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.card li {
+    margin: 8px 0;
+}
+
+.action {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.light {
+    background: #fff;
+    border: 1px solid #d0d7de;
+    color: #111;
+}
+
+.dark {
+    background: #24292f;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.enterprise {
+    border: 2px solid #1f6feb;
+}
+
+.label {
+    background: #1f6feb;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.addons h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.addonsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.addon {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.addon h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.addon p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .addonsgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+.subttl {
+    color: blue;
+}
