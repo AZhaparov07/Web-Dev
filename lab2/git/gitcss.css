@@ -154,20 +154,12 @@ body {
     font-size: 13px;
 }
 
-@media (max-width: 900px) {
-    .pricing {
-        flex-direction: column;
-    }
-
-    .addonsgrid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-}
-
 .subttl {
     color: blue;
+}
+
+.info {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
