@@ -31,6 +31,16 @@
     width:50px;
     cursor: pointer;
 }
+.btndel{
+    background-color: red;
+    color:white;
+    padding:7px;
+    border-radius: 5px;
+    border-color:black;
+    border:50%;
+    width:50px;
+    cursor: pointer;
+}
 .input_field{ 
     margin-bottom:40px;
     margin-top:20px;

@@ -1,0 +1,164 @@
+import { Product } from '../models/product.model';
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 1,
+    name: 'iPhone 16 pro 256GB',
+    description: 'A smartphone with a powerful processor and a great camera. Suitable for photos, videos and games every day.',
+    price: 800000,
+    rating: 5.0,
+    image: 'https://gadgetstore.kz/wa-data/public/shop/products/77/10/1077/images/2919/2919.970.jpg',
+    images: [
+      'https://via.placeholder.com/600x400?text=iPhone+13+1',
+      'https://via.placeholder.com/600x400?text=iPhone+13+2',
+      'https://via.placeholder.com/600x400?text=iPhone+13+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/apple-iphone-16-pro-256gb-zolotistyi-123889224/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'phone',
+    likes: 0
+  },
+  {
+    id: 2,
+    name: 'AirPods Pro 2',
+    description: 'Wireless headphones with active noise reduction. Comfortable, compact and with high-quality sound.',
+    price: 103419,
+    rating: 4.2,
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRASHGdXMXIerI-1nWWHcRm7FEo9H1_1HSphQ&s',
+    images: [
+      'https://via.placeholder.com/600x400?text=AirPods+1',
+      'https://via.placeholder.com/600x400?text=AirPods+2',
+      'https://via.placeholder.com/600x400?text=AirPods+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/naushniki-apple-airpods-pro-2nd-generation-with-wireless-magsafe-charging-case-belyi-113677582/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'headphone',
+    likes: 0
+  },
+  {
+    id: 3,
+    name: 'LG TV 67" 8K',
+    description: 'Smart TV with 8k picture and bright colors. Great for movies and games.',
+    price: 298489,
+    rating: 4.8,
+    image: 'https://avatars.mds.yandex.net/get-mpic/14368984/2a000001987b0ab6de67c7facebf00b9c5d2/orig',
+    images: [
+      'https://via.placeholder.com/600x400?text=TV+1',
+      'https://via.placeholder.com/600x400?text=TV+2',
+      'https://via.placeholder.com/600x400?text=TV+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/lg-55ua75009la-140-sm-chernyi-138403527/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'tv',
+    likes: 0
+  },
+  {
+    id: 4,
+    name: 'Xiaomi Redmi Note 12',
+    description: 'A smartphone with a good screen and autonomy. A balance of price and opportunities for everyday tasks.',
+    price: 212439,
+    rating: 4.5,
+    image: 'https://tgrad.kz/upload/resize_cache/iblock/d37/1000_1000_1/1fz1jjy0aro35vzc2x18mg0otwdj2l2q.webp',
+    images: [
+      'https://via.placeholder.com/600x400?text=Redmi+1',
+      'https://via.placeholder.com/600x400?text=Redmi+2',
+      'https://via.placeholder.com/600x400?text=Redmi+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/xiaomi-redmi-note-14-pro-12-gb-512-gb-chernyi-134217937/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'phone',
+    likes: 0
+  },
+  {
+    id: 5,
+    name: 'MacBook Air M3',
+    description: 'A lightweight laptop for study and work. Fast, quiet and with excellent autonomy.',
+    price: 743219,
+    rating: 4.7,
+    image: 'https://gadgetstore.kz/wa-data/public/shop/products/48/09/948/images/2706/2706.970.jpg',
+    images: [
+      'https://via.placeholder.com/600x400?text=Mac+1',
+      'https://via.placeholder.com/600x400?text=Mac+2',
+      'https://via.placeholder.com/600x400?text=Mac+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-2024-13-6-16-gb-ssd-512-gb-macos-mxct3-137228009/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'laptop',
+    likes: 0
+  },
+  {
+    id: 6,
+    name: 'PlayStation 4',
+    description: 'A new generation game console. Fast loading and excellent graphics for top games.',
+    price: 229990,
+    rating: 4.3,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h6c/h52/63770119897118.jpg?format=gallery-large',
+    images: [
+      'https://via.placeholder.com/600x400?text=PS5+1',
+      'https://via.placeholder.com/600x400?text=PS5+2',
+      'https://via.placeholder.com/600x400?text=PS5+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/sony-playstation-4-pro-1tb-chernyi-gta-v-mk-11-call-of-duty-ufc-4-geimpad-103627528/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'gaming',
+    likes: 0
+  },
+  {
+    id: 7,
+    name: 'Samsung A35',
+    description: 'Weak phone, poor internet connection and short battery life',
+    price: 148960,
+    rating: 2.5,
+    image: 'https://sanmi.kz/upload/iblock/078/85428766703646.png',
+    images: [
+      'https://via.placeholder.com/600x400?text=Watch+1',
+      'https://via.placeholder.com/600x400?text=Watch+2',
+      'https://via.placeholder.com/600x400?text=Watch+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/samsung-galaxy-a35-5g-8-gb-128-gb-goluboi-117420525/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'phone',
+    likes: 0
+  },
+  {
+    id: 8,
+    name: 'Dyson Hair Dryer',
+    description: 'A hair dryer with temperature control and powerful airflow. Fast drying and gentle care.',
+    price: 349990,
+    rating: 4.9,
+    image: 'https://i5.walmartimages.com/seo/Dyson-Supersonic-Hair-Dryer-Vinca-Blue-Ros_5e56b5dc-dfef-41e9-a292-60a2e0499e6c.6f6128b254a5fd58929efbf22f69283e.jpeg',
+    images: [
+      'https://via.placeholder.com/600x400?text=Dyson+1',
+      'https://via.placeholder.com/600x400?text=Dyson+2',
+      'https://via.placeholder.com/600x400?text=Dyson+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/dyson-airwrap-i-d-multi-styler-and-dryer-straight-wavy-fen-rozovyi-bronzovyi-149656943/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'home',
+    likes: 0
+  },
+  {
+    id: 9,
+    name: 'Logitech G Pro Mouse',
+    description: 'A convenient mouse for work and study. Precise control, comfortable shape and reliability.',
+    price: 70000,
+    rating: 4.3,
+    image: 'https://api.technodom.kz/f3/api/v1/images/228984_1.jpg',
+    images: [
+      'https://via.placeholder.com/600x400?text=Mouse+1',
+      'https://via.placeholder.com/600x400?text=Mouse+2',
+      'https://via.placeholder.com/600x400?text=Mouse+3',
+    ],
+    link: 'https://kaspi.kz/shop/p/logitech-g-pro-wireless-chernyi-100348163/?srsltid=AfmBOorD4b0g5vetkZjKmwhcBLcLOLy_h4McXfKd7SZYbBAR66wYNuAh&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_smartphones_apple_desktop&gbraid=0AAAAAC7-v7g1dlU13qtEZOFbfpPkZ0ZHT&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3BWp1ZnH6Gf6WkeZEqqQBrysKmr-axwrezRRXixjGNNtvaPP_OMRY4aAjYFEALw_wcB',
+    category: 'gaming',
+    likes: 0
+  },
+  {
+    id: 10,
+    name: 'Oppo A5 Pro ',
+    description: 'Portable speaker with loud sound and bass. Suitable for home, outdoor and travel.',
+    price: 50000,
+    rating: 2.5,
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZqWMa_59p3vvqWvu5Y6Op1et_zPwBqaC_Bw&s',
+    images: [
+      'https://via.placeholder.com/600x400?text=JBL+1',
+      'https://via.placeholder.com/600x400?text=JBL+2',
+      'https://via.placeholder.com/600x400?text=JBL+3',
+    ],
+    link: 'https://kaspi.kz/',
+    category: 'phone',
+    likes: 0
+  },
+];

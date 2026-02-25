@@ -1,0 +1,48 @@
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/aa/Logo_of_Kaspi_bank.png/960px-Logo_of_Kaspi_bank.png" class="kaspi-logo">
+        <span class="brand-text">Kaspi.kz</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#">Клиентам</a>
+      <a href="#">Бизнесу</a>
+      <a href="#">Каспид Гид</a>
+    </nav>
+    <div class="right">
+      <input class="search" type="search" placeholder="Поиск товара в Kaspi">
+    </div>
+  </div>
+</header>
+
+<section class="grid">
+  @for (p of products; track p.id) {
+    <article class="card">
+      <a class="imgWrap" [href]="p.link" target="_blank" rel="noopener">
+        <img [src]="p.image" [alt]="p.name" class="imgsize" />
+      </a>
+
+      <h3 class="title">{{ p.name }}</h3>
+      <p class="desc">{{ p.description }}</p>
+
+      <div class="meta">
+        <div class="price">{{ p.price }} ₸</div>
+
+        <div class="rating">
+          <span class="stars">
+            @for (s of stars(p.rating); track $index) { <span>{{ s }}</span> }
+          </span>
+          <span class="num">{{ p.rating }}</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn wa" [href]="whatsappLink(p)" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn tg" [href]="telegramLink(p)" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn kaspi" [href]="p.link" target="_blank" rel="noopener">Open in Kaspi</a>
+      </div>
+    </article>
+  }
+</section>
