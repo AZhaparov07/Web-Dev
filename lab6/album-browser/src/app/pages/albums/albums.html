@@ -1,0 +1,30 @@
+<section class="wrap">
+  <div class="head">
+    <h2>Albums</h2>
+    <span class="badge">
+      <ng-container *ngIf="loading; else countTpl">Loading…</ng-container>
+      <ng-template #countTpl>{{ albums.length }} items</ng-template>
+    </span>
+  </div>
+
+  <div *ngIf="loading" class="state">Loading albums…</div>
+
+  <div *ngIf="!loading && error" class="state error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error && albums.length === 0" class="state">
+    No albums found.
+  </div>
+
+  <div class="list" *ngIf="!loading && !error && albums.length > 0">
+    <div class="row" *ngFor="let a of albums" (click)="openAlbum(a.id)">
+      <div class="title">
+        <div class="id">#{{ a.id }}</div>
+        <div class="t">{{ a.title }}</div>
+      </div>
+
+      <button class="delete" (click)="deleteAlbum(a.id); $event.stopPropagation()">Delete</button>
+    </div>
+  </div>
+</section>
