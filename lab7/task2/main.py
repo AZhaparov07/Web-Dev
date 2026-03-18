@@ -1,19 +1,22 @@
 from models import Animal, Pig, Cat
 
 def main():
-    animal1 = Animal("Animal General", 3, "Boy")
-    pig1 = Pig("Josh", 2, "Girl", "Very dirty")
-    cat1 = Cat("Oreo", 1, "Boy", 9)
+    a1 = Animal("Animal General", 3, "Boy")
+    p1 = Pig("Josh", 2, "Girl", "Very dirty",True)
+    c1 = Cat("Oreo", 1, "Boy", 9)
 
-    animals = [animal1, pig1, cat1]
+    animals = [a1, p1, c1]
 
     for i in animals:
         print(i)
-        print(i.eat())
+        print(i.sleep())
         print(i.make_sound())
+        print(i.grow())
 
-    print(pig1.roll_in_mud())
-    print(cat1.go_haunting())
+    print(p1.roll_in_mud())
+    print(p1.check_hunger())
+    print(c1.go_haunting())
+    print(c1.play())
 
 
 if __name__ == "__main__":
